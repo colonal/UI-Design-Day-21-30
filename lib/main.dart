@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ui_design_day_21_30/day21/day_21_screen.dart';
 
 import 'day22/day_22_screen.dart';
+import 'day23/day_23_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -55,6 +56,17 @@ class MyHomePage extends StatelessWidget {
               color: Colors.blueGrey[900],
               child: const Text(
                 "Day 22",
+                style: TextStyle(color: Colors.white, fontSize: 24),
+              ),
+            ),
+            MaterialButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const Day23Screen()));
+              },
+              color: Colors.blueGrey[900],
+              child: const Text(
+                "Day 23",
                 style: TextStyle(color: Colors.white, fontSize: 24),
               ),
             ),
