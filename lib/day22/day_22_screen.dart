@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:ui_design_day_21_30/day22/single_post.dart';
 import 'package:ui_design_day_21_30/day22/single_user.dart';
 
 import 'data/sample.dart';
@@ -190,14 +191,19 @@ class _Day22ScreenState extends State<Day22Screen> {
           ),
           const SizedBox(height: 20),
           SizedBox(
-            height: 300,
-            child: ListView.builder(
+              height: 300,
+              child: ListView.builder(
                 shrinkWrap: true,
                 itemCount: post.photos.length,
                 scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) =>
-                    buildPostPhoto(post.photos[index])),
-          ),
+                itemBuilder: (context, index) => InkWell(
+                    onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                        builder: (_) => SinglePost(
+                              post: post,
+                              image: post.photos[index],
+                            ))),
+                    child: buildPostPhoto(post.photos[index])),
+              )),
           const SizedBox(height: 40),
         ],
       ),
