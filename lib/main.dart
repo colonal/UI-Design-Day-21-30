@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ui_design_day_21_30/day21/day_21_screen.dart';
-import 'package:ui_design_day_21_30/day24/themes/app_thime.dart';
 
+import 'day24/themes/app_thime.dart';
+import 'day21/day_21_screen.dart';
 import 'day22/day_22_screen.dart';
 import 'day23/day_23_screen.dart';
 import 'day24/day_24_screen.dart';
@@ -9,6 +9,7 @@ import 'day25-26/day_25_screen.dart';
 import 'day25-26/day_26_screen.dart';
 import 'day27/day_27_screen.dart';
 import 'day28/dsy_28_screen.dart';
+import 'day29/day_29_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -95,14 +96,8 @@ class MyHomePage extends StatelessWidget {
             ),
             MaterialButton(
               onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (_) => MaterialApp(
-                          debugShowCheckedModeBanner: false,
-                          theme: AppTheme.light,
-                          darkTheme: AppTheme.dark,
-                          themeMode: ThemeMode.system,
-                          home: const Day25Screen(),
-                        )));
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const Day25Screen()));
               },
               color: Colors.blueGrey[900],
               child: const Text(
@@ -112,14 +107,8 @@ class MyHomePage extends StatelessWidget {
             ),
             MaterialButton(
               onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (_) => MaterialApp(
-                          debugShowCheckedModeBanner: false,
-                          theme: AppTheme.light,
-                          darkTheme: AppTheme.dark,
-                          themeMode: ThemeMode.system,
-                          home: const Day26Screen(),
-                        )));
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const Day26Screen()));
               },
               color: Colors.blueGrey[900],
               child: const Text(
@@ -129,14 +118,8 @@ class MyHomePage extends StatelessWidget {
             ),
             MaterialButton(
               onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (_) => MaterialApp(
-                          debugShowCheckedModeBanner: false,
-                          theme: AppTheme.light,
-                          darkTheme: AppTheme.dark,
-                          themeMode: ThemeMode.system,
-                          home: const Day27Screen(),
-                        )));
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const Day27Screen()));
               },
               color: Colors.blueGrey[900],
               child: const Text(
@@ -146,18 +129,23 @@ class MyHomePage extends StatelessWidget {
             ),
             MaterialButton(
               onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (_) => MaterialApp(
-                          debugShowCheckedModeBanner: false,
-                          theme: AppTheme.light,
-                          darkTheme: AppTheme.dark,
-                          themeMode: ThemeMode.system,
-                          home: const Day28Screen(),
-                        )));
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const Day28Screen()));
               },
               color: Colors.blueGrey[900],
               child: const Text(
                 "Day 28",
+                style: TextStyle(color: Colors.white, fontSize: 24),
+              ),
+            ),
+            MaterialButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const Day29Screen()));
+              },
+              color: Colors.blueGrey[900],
+              child: const Text(
+                "Day 29",
                 style: TextStyle(color: Colors.white, fontSize: 24),
               ),
             ),
