@@ -57,6 +57,18 @@ flutter:
     - assets/images/day23/
     - assets/images/day24/
     - assets/images/day29/
+    - assets/images/day30/
+    - assets/screenshot/day21/1.png
+    - assets/screenshot/day22/1.png
+    - assets/screenshot/day23/1.png
+    - assets/screenshot/day24/1.png
+    - assets/screenshot/day25/1.png
+    - assets/screenshot/day26/1.png
+    - assets/screenshot/day27/1.png
+    - assets/screenshot/day28/1.png
+    - assets/screenshot/day29/1.png
+    - assets/screenshot/day30/1.png
+    
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

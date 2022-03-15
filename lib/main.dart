@@ -10,6 +10,8 @@ import 'day25-26/day_26_screen.dart';
 import 'day27/day_27_screen.dart';
 import 'day28/dsy_28_screen.dart';
 import 'day29/day_29_screen.dart';
+import 'day30/day_30_screen.dart';
+import 'home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(),
+      home: const HomeScreen(),
     );
   }
 }
@@ -146,6 +148,17 @@ class MyHomePage extends StatelessWidget {
               color: Colors.blueGrey[900],
               child: const Text(
                 "Day 29",
+                style: TextStyle(color: Colors.white, fontSize: 24),
+              ),
+            ),
+            MaterialButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const Day30Screen()));
+              },
+              color: Colors.blueGrey[900],
+              child: const Text(
+                "Day 30",
                 style: TextStyle(color: Colors.white, fontSize: 24),
               ),
             ),
